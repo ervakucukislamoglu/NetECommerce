@@ -9,8 +9,8 @@ namespace NetECommerce.BLL.Repository.IntRepo
     public interface IRepository<T> where T:BaseEntity
     {
         //Tüm datayı cek/listele.
-        List<T> ListAll();
-
+        //List<T> ListAll();
+        IEnumerable<T> ListAll();
         //ID'ye gore veri cek.
         T GetById(int id);
 
@@ -20,7 +20,7 @@ namespace NetECommerce.BLL.Repository.IntRepo
         //Status'u updated olan veriyi cekecek.
         List<T> GetModifieds();
 
-        //Veri ekleme
+        //Veri ekleme/olusturma
         void Add(T item);
 
         //Veri gulcelleme (status updated olacak unutma)

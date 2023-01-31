@@ -5,7 +5,7 @@ using System;
 
 namespace NetEcommerce.Entity.Base
 {
-    public class BaseEntity : IEntity<Guid>
+    public abstract class BaseEntity : IEntity<Guid>
     {
         public BaseEntity()
         {
